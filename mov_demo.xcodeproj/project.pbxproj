@@ -7,22 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		242F72EE2BC1D1990027D974 /* UIImage+Color.m in Sources */ = {isa = PBXBuildFile; fileRef = 242F72ED2BC1D1990027D974 /* UIImage+Color.m */; };
+		242F72F52BC1D5C50027D974 /* HeartAnimationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 242F72F42BC1D5C50027D974 /* HeartAnimationView.m */; };
 		244606D42BBEFFC20019D104 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 244606D32BBEFFC20019D104 /* AppDelegate.m */; };
-		244606D72BBEFFC20019D104 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 244606D62BBEFFC20019D104 /* SceneDelegate.m */; };
 		244606DA2BBEFFC20019D104 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 244606D92BBEFFC20019D104 /* ViewController.m */; };
 		244606DD2BBEFFC20019D104 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 244606DB2BBEFFC20019D104 /* Main.storyboard */; };
 		244606E02BBEFFC20019D104 /* mov_demo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 244606DE2BBEFFC20019D104 /* mov_demo.xcdatamodeld */; };
 		244606E22BBEFFC50019D104 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 244606E12BBEFFC50019D104 /* Assets.xcassets */; };
 		244606E52BBEFFC50019D104 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 244606E32BBEFFC50019D104 /* LaunchScreen.storyboard */; };
 		244606E82BBEFFC50019D104 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 244606E72BBEFFC50019D104 /* main.m */; };
+		244606F32BBF047C0019D104 /* HomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 244606F22BBF047C0019D104 /* HomeVC.m */; };
+		244606F62BBF04920019D104 /* UserVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 244606F52BBF04920019D104 /* UserVC.m */; };
+		244606F92BBF04C80019D104 /* GoodsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 244606F82BBF04C80019D104 /* GoodsVC.m */; };
+		244606FE2BBF0B0A0019D104 /* ProductCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 244606FD2BBF0B0A0019D104 /* ProductCell.m */; };
+		244607012BBF0EA40019D104 /* Product.m in Sources */ = {isa = PBXBuildFile; fileRef = 244607002BBF0EA40019D104 /* Product.m */; };
+		246A99BC2BC17E5800D13BFD /* TabBarVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 246A99BB2BC17E5800D13BFD /* TabBarVC.m */; };
+		C9229A32457F066B4CB2BA04 /* Pods_mov_demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 890A9DE63CA40F3F4AB73BF8 /* Pods_mov_demo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		242F72EC2BC1D1990027D974 /* UIImage+Color.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+Color.h"; sourceTree = "<group>"; };
+		242F72ED2BC1D1990027D974 /* UIImage+Color.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Color.m"; sourceTree = "<group>"; };
+		242F72F32BC1D5C50027D974 /* HeartAnimationView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HeartAnimationView.h; sourceTree = "<group>"; };
+		242F72F42BC1D5C50027D974 /* HeartAnimationView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HeartAnimationView.m; sourceTree = "<group>"; };
+		242F72F62BC1D9F30027D974 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		244606CF2BBEFFC20019D104 /* mov_demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mov_demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		244606D22BBEFFC20019D104 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		244606D32BBEFFC20019D104 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		244606D52BBEFFC20019D104 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
-		244606D62BBEFFC20019D104 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
 		244606D82BBEFFC20019D104 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		244606D92BBEFFC20019D104 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		244606DC2BBEFFC20019D104 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -31,6 +42,21 @@
 		244606E42BBEFFC50019D104 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		244606E62BBEFFC50019D104 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		244606E72BBEFFC50019D104 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		244606F12BBF047C0019D104 /* HomeVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeVC.h; sourceTree = "<group>"; };
+		244606F22BBF047C0019D104 /* HomeVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeVC.m; sourceTree = "<group>"; };
+		244606F42BBF04920019D104 /* UserVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserVC.h; sourceTree = "<group>"; };
+		244606F52BBF04920019D104 /* UserVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserVC.m; sourceTree = "<group>"; };
+		244606F72BBF04C80019D104 /* GoodsVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GoodsVC.h; sourceTree = "<group>"; };
+		244606F82BBF04C80019D104 /* GoodsVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GoodsVC.m; sourceTree = "<group>"; };
+		244606FC2BBF0B0A0019D104 /* ProductCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProductCell.h; sourceTree = "<group>"; };
+		244606FD2BBF0B0A0019D104 /* ProductCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProductCell.m; sourceTree = "<group>"; };
+		244606FF2BBF0EA40019D104 /* Product.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Product.h; sourceTree = "<group>"; };
+		244607002BBF0EA40019D104 /* Product.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Product.m; sourceTree = "<group>"; };
+		246A99BA2BC17E5700D13BFD /* TabBarVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TabBarVC.h; sourceTree = "<group>"; };
+		246A99BB2BC17E5800D13BFD /* TabBarVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TabBarVC.m; sourceTree = "<group>"; };
+		344927E3DA1FD8634C8B0B20 /* Pods-mov_demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mov_demo.debug.xcconfig"; path = "Target Support Files/Pods-mov_demo/Pods-mov_demo.debug.xcconfig"; sourceTree = "<group>"; };
+		890A9DE63CA40F3F4AB73BF8 /* Pods_mov_demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_mov_demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B8432F507353E55166BBB87C /* Pods-mov_demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mov_demo.release.xcconfig"; path = "Target Support Files/Pods-mov_demo/Pods-mov_demo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,17 +64,47 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9229A32457F066B4CB2BA04 /* Pods_mov_demo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1C9DBFBE4503FB535D171BCA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				344927E3DA1FD8634C8B0B20 /* Pods-mov_demo.debug.xcconfig */,
+				B8432F507353E55166BBB87C /* Pods-mov_demo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		242F72E82BC1D0B30027D974 /* category */ = {
+			isa = PBXGroup;
+			children = (
+				242F72EC2BC1D1990027D974 /* UIImage+Color.h */,
+				242F72ED2BC1D1990027D974 /* UIImage+Color.m */,
+			);
+			path = category;
+			sourceTree = "<group>";
+		};
+		242F72EF2BC1D5720027D974 /* animation */ = {
+			isa = PBXGroup;
+			children = (
+				242F72F32BC1D5C50027D974 /* HeartAnimationView.h */,
+				242F72F42BC1D5C50027D974 /* HeartAnimationView.m */,
+			);
+			path = animation;
+			sourceTree = "<group>";
+		};
 		244606C62BBEFFC20019D104 = {
 			isa = PBXGroup;
 			children = (
 				244606D12BBEFFC20019D104 /* mov_demo */,
 				244606D02BBEFFC20019D104 /* Products */,
+				1C9DBFBE4503FB535D171BCA /* Pods */,
+				9C4BB02C397C44004653766D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,10 +119,11 @@
 		244606D12BBEFFC20019D104 /* mov_demo */ = {
 			isa = PBXGroup;
 			children = (
+				242F72E82BC1D0B30027D974 /* category */,
+				244606FA2BBF0AE30019D104 /* views */,
+				244606EE2BBF04260019D104 /* controller */,
 				244606D22BBEFFC20019D104 /* AppDelegate.h */,
 				244606D32BBEFFC20019D104 /* AppDelegate.m */,
-				244606D52BBEFFC20019D104 /* SceneDelegate.h */,
-				244606D62BBEFFC20019D104 /* SceneDelegate.m */,
 				244606D82BBEFFC20019D104 /* ViewController.h */,
 				244606D92BBEFFC20019D104 /* ViewController.m */,
 				244606DB2BBEFFC20019D104 /* Main.storyboard */,
@@ -75,8 +132,52 @@
 				244606E62BBEFFC50019D104 /* Info.plist */,
 				244606E72BBEFFC50019D104 /* main.m */,
 				244606DE2BBEFFC20019D104 /* mov_demo.xcdatamodeld */,
+				246A99BA2BC17E5700D13BFD /* TabBarVC.h */,
+				246A99BB2BC17E5800D13BFD /* TabBarVC.m */,
+				242F72F62BC1D9F30027D974 /* PrefixHeader.pch */,
 			);
 			path = mov_demo;
+			sourceTree = "<group>";
+		};
+		244606EE2BBF04260019D104 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				244606F12BBF047C0019D104 /* HomeVC.h */,
+				244606F22BBF047C0019D104 /* HomeVC.m */,
+				244606F42BBF04920019D104 /* UserVC.h */,
+				244606F52BBF04920019D104 /* UserVC.m */,
+				244606F72BBF04C80019D104 /* GoodsVC.h */,
+				244606F82BBF04C80019D104 /* GoodsVC.m */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		244606FA2BBF0AE30019D104 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				242F72EF2BC1D5720027D974 /* animation */,
+				244606FB2BBF0AF10019D104 /* gcd */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		244606FB2BBF0AF10019D104 /* gcd */ = {
+			isa = PBXGroup;
+			children = (
+				244606FC2BBF0B0A0019D104 /* ProductCell.h */,
+				244606FD2BBF0B0A0019D104 /* ProductCell.m */,
+				244606FF2BBF0EA40019D104 /* Product.h */,
+				244607002BBF0EA40019D104 /* Product.m */,
+			);
+			path = gcd;
+			sourceTree = "<group>";
+		};
+		9C4BB02C397C44004653766D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				890A9DE63CA40F3F4AB73BF8 /* Pods_mov_demo.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -86,9 +187,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 244606EB2BBEFFC50019D104 /* Build configuration list for PBXNativeTarget "mov_demo" */;
 			buildPhases = (
+				FFB8E16C16A61CEB34982BDF /* [CP] Check Pods Manifest.lock */,
 				244606CB2BBEFFC20019D104 /* Sources */,
 				244606CC2BBEFFC20019D104 /* Frameworks */,
 				244606CD2BBEFFC20019D104 /* Resources */,
+				5A752097638600B44E9F742B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -144,15 +247,64 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5A752097638600B44E9F742B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-mov_demo/Pods-mov_demo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-mov_demo/Pods-mov_demo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-mov_demo/Pods-mov_demo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FFB8E16C16A61CEB34982BDF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-mov_demo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		244606CB2BBEFFC20019D104 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				244606E82BBEFFC50019D104 /* main.m in Sources */,
+				246A99BC2BC17E5800D13BFD /* TabBarVC.m in Sources */,
+				242F72F52BC1D5C50027D974 /* HeartAnimationView.m in Sources */,
+				244607012BBF0EA40019D104 /* Product.m in Sources */,
+				244606F92BBF04C80019D104 /* GoodsVC.m in Sources */,
 				244606DA2BBEFFC20019D104 /* ViewController.m in Sources */,
 				244606D42BBEFFC20019D104 /* AppDelegate.m in Sources */,
-				244606D72BBEFFC20019D104 /* SceneDelegate.m in Sources */,
+				244606F32BBF047C0019D104 /* HomeVC.m in Sources */,
+				244606FE2BBF0B0A0019D104 /* ProductCell.m in Sources */,
+				242F72EE2BC1D1990027D974 /* UIImage+Color.m in Sources */,
+				244606F62BBF04920019D104 /* UserVC.m in Sources */,
 				244606E02BBEFFC20019D104 /* mov_demo.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -291,12 +443,14 @@
 		};
 		244606EC2BBEFFC50019D104 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 344927E3DA1FD8634C8B0B20 /* Pods-mov_demo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = G8737KU9CT;
+				GCC_PREFIX_HEADER = /Users/xueyihou/Documents/OC/mov_demo/mov_demo/PrefixHeader.pch;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = mov_demo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -318,12 +472,14 @@
 		};
 		244606ED2BBEFFC50019D104 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B8432F507353E55166BBB87C /* Pods-mov_demo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = G8737KU9CT;
+				GCC_PREFIX_HEADER = /Users/xueyihou/Documents/OC/mov_demo/mov_demo/PrefixHeader.pch;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = mov_demo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

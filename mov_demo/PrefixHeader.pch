@@ -1,0 +1,19 @@
+//
+//  PrefixHeader.pch
+//  mov_demo
+//
+//  Created by Mountain on 07/04/2024.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#define LIGHT_GREEN_COLOR [UIColor colorWithRed:152/255.0 green:251/255.0 blue:152/255.0 alpha:1.0]
+// 在头文件中定义宏
+#define DeviceWidth CGRectGetWidth([UIScreen mainScreen].bounds)
+
+
+#endif /* PrefixHeader_pch */
