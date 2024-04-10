@@ -37,7 +37,7 @@
 
     // 添加杆子图层
        CALayer *stickLayer = [CALayer layer];
-       stickLayer.bounds = CGRectMake(0, 0, 10, CGRectGetHeight(self.bounds));
+       stickLayer.bounds = CGRectMake(0, self.bounds.size.height/2, 5, CGRectGetHeight(self.bounds)/2);
        stickLayer.position = CGPointMake(CGRectGetMidX(self.bounds), CGRectGetMidY(self.bounds));
        stickLayer.backgroundColor = [UIColor whiteColor].CGColor;
        [self.layer addSublayer:stickLayer];

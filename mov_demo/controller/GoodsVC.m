@@ -8,7 +8,7 @@
 #import "GoodsVC.h"
 #import "ProductCell.h"
 
-@interface GoodsVC ()<UITableViewDelegate, UITableViewDataSource>
+@interface GoodsVC ()<UITableViewDelegate, UITableViewDataSource, CustomCellDelegate>
 
 @property (nonatomic, strong) UITableView *tableView;
 @property (nonatomic, strong) NSMutableArray *products;
@@ -18,20 +18,20 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.navigationItem.title = @"动态热点";
-    self.view.backgroundColor = UIColor.whiteColor;
-//    self.products = [NSMutableArray array];
+    
+    // 隐藏导航栏
+    //    [self.navigationController setNavigationBarHidden:YES animated:NO];
     
     // 创建 Product 对象数组
     NSMutableArray<Product *> *products = [NSMutableArray array];
-
+    
     // 获取当前时间
     NSDate *now = [NSDate date];
     // 将当前时间转换为 NSTimeInterval 类型的时间戳
     NSTimeInterval timestamp = [now timeIntervalSinceReferenceDate];
     // 打印时间戳
     NSLog(@"当前时间的时间戳：%f", timestamp);
-
+    
     // 添加示例数据到数组中
     for (int i = 0; i < 10; i++) {
         // 每个商品的倒计时时间增加10秒
@@ -43,12 +43,12 @@
         [products addObject:product];
     }
     self.products = products;
-       
-       self.tableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
-       self.tableView.delegate = self;
-       self.tableView.dataSource = self;
-       [self.tableView registerClass:[ProductCell class] forCellReuseIdentifier:@"ProductCell"];
-       [self.view addSubview:self.tableView];
+    
+    self.tableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
+    self.tableView.delegate = self;
+    self.tableView.dataSource = self;
+    [self.tableView registerClass:[ProductCell class] forCellReuseIdentifier:@"ProductCell"];
+    [self.view addSubview:self.tableView];
 }
 
 
@@ -59,7 +59,7 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     ProductCell *cell = [tableView dequeueReusableCellWithIdentifier:@"ProductCell" forIndexPath:indexPath];
     [cell configureCellWithProduct:self.products[indexPath.row]];
-//    cell.delegate = self;
+    //    cell.delegate = self;
     return cell;
 }
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -73,18 +73,10 @@
 }
 
 #pragma mark - ProductTableViewCellDelegate
-
-//- (void)didTapBuyButtonInCell:(ProductCell *)cell {
-//    NSIndexPath *indexPath = [self.tableView indexPathForCell:cell];
-//    if (indexPath) {
-//        NSLog(@"Buy button tapped for product: %@", self.products[indexPath.row]);
-//    }
-//}
-//
-//- (void)didTapCancelButtonInCell:(ProductCell *)cell {
-//    NSIndexPath *indexPath = [self.tableView indexPathForCell:cell];
-//    if (indexPath) {
-//        NSLog(@"Cancel button tapped for product: %@", self.products[indexPath.row]);
-//    }
-//}
+- (void)customCell:(ProductCell *)cell didTapButton:(UIButton *)button{
+    NSIndexPath *indexPath = [self.tableView indexPathForCell:cell];
+    if (indexPath) {
+        NSLog(@"Buy button tapped for product: %@", self.products[indexPath.row]);
+    }
+}
 @end

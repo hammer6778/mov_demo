@@ -42,6 +42,7 @@
     self.buyButton.titleLabel.textColor = UIColor.whiteColor;
     self.buyButton.titleLabel.font = [UIFont systemFontOfSize:14];
     [self.contentView addSubview:self.buyButton];
+    [self.buyButton addTarget:self action:@selector(tapBuyBtn:) forControlEvents:UIControlEventTouchUpInside];
     
 //    self.cancelButton = [UIButton buttonWithType:UIButtonTypeCustom];
 //    [self.cancelButton setTitle:@"取消" forState:UIControlStateNormal];
@@ -100,15 +101,24 @@
     self.productImageView.image = [UIImage imageNamed:product.productImageName];
     
     [self startCountdownWithProduct:product];
+//    if([self.buyButton respondsToSelector:@selector(customCell:didTapButton:)]){
+//
+//    }
 }
 
+-(void)tapBuyBtn:(UIButton *)sender{
+    [self.delegate customCell:self didTapButton:sender];
+}
 // 启动倒计时
 - (void)startCountdownWithProduct:(Product *)product {
     __block NSTimeInterval remainingTime = product.countdownTime - [[NSDate date] timeIntervalSinceReferenceDate];
     if (remainingTime <= 0) {
         // 倒计时已结束，更新UI
         self.countdownLabel.text = @"倒计时已结束";
+        [self.buyButton setEnabled:NO];
+        [self.buyButton setTitle:@"已过期" forState:UIControlStateDisabled];
         [self.buyButton setBackgroundImage:[UIImage imageWithColor:[UIColor grayColor] size:CGSizeMake(60, 18)] forState:UIControlStateDisabled];
+//        self.buyButton.enabled = false;
         return;
     }
     
@@ -121,6 +131,9 @@
             remainingTime -= 1;
         } else {
             self.countdownLabel.text = @"倒计时已结束";
+            [self.buyButton setEnabled:NO];
+            [self.buyButton setTitle:@"已过期" forState:UIControlStateDisabled];
+            [self.buyButton setBackgroundImage:[UIImage imageWithColor:[UIColor grayColor] size:CGSizeMake(60, 18)] forState:UIControlStateDisabled];
             // 取消定时器
             dispatch_source_cancel(timer);
             

@@ -6,6 +6,8 @@ target 'mov_demo' do
 pod 'Masonry'
 pod 'MBProgressHUD'
 
+pod 'AFNetworking', '~> 4.0'
+
   # 在这里添加你需要的 CocoaPods
 end
 

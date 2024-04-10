@@ -19,14 +19,22 @@
     // 记录应用启动的时间
     self.appLaunchTime = [NSDate date];
     
-    TabBarVC *tabbarvc = [[TabBarVC alloc] init];
-    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    self.window.rootViewController = tabbarvc;
-    [self.window makeKeyAndVisible];
+    [self initRoot];
     
     return YES;
 }
 
+-(void)initRoot{
+    
+    TabBarVC *tabbarvc = [[TabBarVC alloc] init];
+    
+    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:tabbarvc];
+    [navigationController setNavigationBarHidden:YES animated:NO];
+    
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    self.window.rootViewController = navigationController;
+    [self.window makeKeyAndVisible];
+}
 
 #pragma mark - Core Data stack
 
