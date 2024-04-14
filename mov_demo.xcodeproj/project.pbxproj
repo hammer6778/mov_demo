@@ -60,6 +60,12 @@
 		247F60A52BC28C18003E0445 /* GlowingGemView.m in Sources */ = {isa = PBXBuildFile; fileRef = 247F60A42BC28C18003E0445 /* GlowingGemView.m */; };
 		247F60A92BC29098003E0445 /* DatabaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 247F60A82BC29098003E0445 /* DatabaseManager.m */; };
 		247F60AC2BC292F1003E0445 /* LoaclUserModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 247F60AA2BC292F1003E0445 /* LoaclUserModel.xcdatamodeld */; };
+		248EBB792BCAE07D00E56B85 /* SearchView.m in Sources */ = {isa = PBXBuildFile; fileRef = 248EBB782BCAE07D00E56B85 /* SearchView.m */; };
+		248EBB7D2BCAE3A800E56B85 /* IconTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 248EBB7C2BCAE3A800E56B85 /* IconTextView.m */; };
+		248EBB802BCAED6600E56B85 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 248EBB7F2BCAED6600E56B85 /* User.m */; };
+		248EBB852BCAF72600E56B85 /* ADScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 248EBB842BCAF72600E56B85 /* ADScrollView.m */; };
+		248EBB892BCB037A00E56B85 /* IconGridView.m in Sources */ = {isa = PBXBuildFile; fileRef = 248EBB882BCB037A00E56B85 /* IconGridView.m */; };
+		248EBB8C2BCB1B1600E56B85 /* LoginVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 248EBB8B2BCB1B1600E56B85 /* LoginVC.m */; };
 		248F2F032BC2E7960055F496 /* PairAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248F2F022BC2E7960055F496 /* PairAnimationView.swift */; };
 		24C5EF122BC3CBBE00BCC4F3 /* NetWorkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 24C5EF112BC3CBBE00BCC4F3 /* NetWorkManager.m */; };
 		24C5EF152BC3CC5700BCC4F3 /* UserSettingsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 24C5EF142BC3CC5700BCC4F3 /* UserSettingsManager.m */; };
@@ -140,6 +146,18 @@
 		247F60A72BC29098003E0445 /* DatabaseManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DatabaseManager.h; sourceTree = "<group>"; };
 		247F60A82BC29098003E0445 /* DatabaseManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DatabaseManager.m; sourceTree = "<group>"; };
 		247F60AB2BC292F1003E0445 /* LoaclUserModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LoaclUserModel.xcdatamodel; sourceTree = "<group>"; };
+		248EBB772BCAE07D00E56B85 /* SearchView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SearchView.h; sourceTree = "<group>"; };
+		248EBB782BCAE07D00E56B85 /* SearchView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SearchView.m; sourceTree = "<group>"; };
+		248EBB7B2BCAE3A800E56B85 /* IconTextView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IconTextView.h; sourceTree = "<group>"; };
+		248EBB7C2BCAE3A800E56B85 /* IconTextView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IconTextView.m; sourceTree = "<group>"; };
+		248EBB7E2BCAED6600E56B85 /* User.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		248EBB7F2BCAED6600E56B85 /* User.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		248EBB832BCAF72600E56B85 /* ADScrollView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ADScrollView.h; sourceTree = "<group>"; };
+		248EBB842BCAF72600E56B85 /* ADScrollView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ADScrollView.m; sourceTree = "<group>"; };
+		248EBB872BCB037A00E56B85 /* IconGridView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IconGridView.h; sourceTree = "<group>"; };
+		248EBB882BCB037A00E56B85 /* IconGridView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IconGridView.m; sourceTree = "<group>"; };
+		248EBB8A2BCB1B1600E56B85 /* LoginVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginVC.h; sourceTree = "<group>"; };
+		248EBB8B2BCB1B1600E56B85 /* LoginVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginVC.m; sourceTree = "<group>"; };
 		248F2F022BC2E7960055F496 /* PairAnimationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PairAnimationView.swift; sourceTree = "<group>"; };
 		24C5EF102BC3CBBE00BCC4F3 /* NetWorkManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetWorkManager.h; sourceTree = "<group>"; };
 		24C5EF112BC3CBBE00BCC4F3 /* NetWorkManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NetWorkManager.m; sourceTree = "<group>"; };
@@ -185,6 +203,8 @@
 			children = (
 				24051A182BC2D37500D56A6A /* UserModel.h */,
 				24051A192BC2D37500D56A6A /* UserModel.m */,
+				248EBB7E2BCAED6600E56B85 /* User.h */,
+				248EBB7F2BCAED6600E56B85 /* User.m */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -277,6 +297,7 @@
 		244606D12BBEFFC20019D104 /* mov_demo */ = {
 			isa = PBXGroup;
 			children = (
+				248EBB812BCAF70100E56B85 /* libs */,
 				2410C9042BC30D65005C79A8 /* Resources */,
 				248F2F012BC2E77C0055F496 /* swift */,
 				24051A142BC2D34C00D56A6A /* model */,
@@ -315,6 +336,8 @@
 				244606F82BBF04C80019D104 /* GoodsVC.m */,
 				2401336B2BC2F03B00B36D01 /* PairVC.h */,
 				2401336C2BC2F03B00B36D01 /* PairVC.m */,
+				248EBB8A2BCB1B1600E56B85 /* LoginVC.h */,
+				248EBB8B2BCB1B1600E56B85 /* LoginVC.m */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -322,6 +345,9 @@
 		244606FA2BBF0AE30019D104 /* views */ = {
 			isa = PBXGroup;
 			children = (
+				248EBB862BCB036600E56B85 /* girdVIew */,
+				248EBB7A2BCAE38D00E56B85 /* IconText */,
+				248EBB762BCAE06000E56B85 /* search */,
 				242F72EF2BC1D5720027D974 /* animation */,
 				244606FB2BBF0AF10019D104 /* gcd */,
 			);
@@ -350,6 +376,50 @@
 				24C5EF142BC3CC5700BCC4F3 /* UserSettingsManager.m */,
 			);
 			path = utils;
+			sourceTree = "<group>";
+		};
+		248EBB762BCAE06000E56B85 /* search */ = {
+			isa = PBXGroup;
+			children = (
+				248EBB772BCAE07D00E56B85 /* SearchView.h */,
+				248EBB782BCAE07D00E56B85 /* SearchView.m */,
+			);
+			path = search;
+			sourceTree = "<group>";
+		};
+		248EBB7A2BCAE38D00E56B85 /* IconText */ = {
+			isa = PBXGroup;
+			children = (
+				248EBB7B2BCAE3A800E56B85 /* IconTextView.h */,
+				248EBB7C2BCAE3A800E56B85 /* IconTextView.m */,
+			);
+			path = IconText;
+			sourceTree = "<group>";
+		};
+		248EBB812BCAF70100E56B85 /* libs */ = {
+			isa = PBXGroup;
+			children = (
+				248EBB822BCAF70E00E56B85 /* ADscroll */,
+			);
+			path = libs;
+			sourceTree = "<group>";
+		};
+		248EBB822BCAF70E00E56B85 /* ADscroll */ = {
+			isa = PBXGroup;
+			children = (
+				248EBB832BCAF72600E56B85 /* ADScrollView.h */,
+				248EBB842BCAF72600E56B85 /* ADScrollView.m */,
+			);
+			path = ADscroll;
+			sourceTree = "<group>";
+		};
+		248EBB862BCB036600E56B85 /* girdVIew */ = {
+			isa = PBXGroup;
+			children = (
+				248EBB872BCB037A00E56B85 /* IconGridView.h */,
+				248EBB882BCB037A00E56B85 /* IconGridView.m */,
+			);
+			path = girdVIew;
 			sourceTree = "<group>";
 		};
 		248F2F012BC2E77C0055F496 /* swift */ = {
@@ -514,11 +584,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				248EBB802BCAED6600E56B85 /* User.m in Sources */,
+				248EBB8C2BCB1B1600E56B85 /* LoginVC.m in Sources */,
+				248EBB792BCAE07D00E56B85 /* SearchView.m in Sources */,
 				247F60A52BC28C18003E0445 /* GlowingGemView.m in Sources */,
 				244606E82BBEFFC50019D104 /* main.m in Sources */,
 				246A99BC2BC17E5800D13BFD /* TabBarVC.m in Sources */,
 				242F72F52BC1D5C50027D974 /* HeartAnimationView.m in Sources */,
 				24C5EF122BC3CBBE00BCC4F3 /* NetWorkManager.m in Sources */,
+				248EBB892BCB037A00E56B85 /* IconGridView.m in Sources */,
 				244607012BBF0EA40019D104 /* Product.m in Sources */,
 				248F2F032BC2E7960055F496 /* PairAnimationView.swift in Sources */,
 				2401336D2BC2F03B00B36D01 /* PairVC.m in Sources */,
@@ -530,11 +604,13 @@
 				24051A172BC2D36700D56A6A /* UserViewModel.m in Sources */,
 				244606F32BBF047C0019D104 /* HomeVC.m in Sources */,
 				247F60A22BC28576003E0445 /* VIPIconView.m in Sources */,
+				248EBB852BCAF72600E56B85 /* ADScrollView.m in Sources */,
 				244606FE2BBF0B0A0019D104 /* ProductCell.m in Sources */,
 				242F72EE2BC1D1990027D974 /* UIImage+Color.m in Sources */,
 				244606F62BBF04920019D104 /* UserVC.m in Sources */,
 				247F60A92BC29098003E0445 /* DatabaseManager.m in Sources */,
 				24C5EF152BC3CC5700BCC4F3 /* UserSettingsManager.m in Sources */,
+				248EBB7D2BCAE3A800E56B85 /* IconTextView.m in Sources */,
 				247F60AC2BC292F1003E0445 /* LoaclUserModel.xcdatamodeld in Sources */,
 				244606E02BBEFFC20019D104 /* mov_demo.xcdatamodeld in Sources */,
 			);

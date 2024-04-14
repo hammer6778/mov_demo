@@ -7,6 +7,7 @@
 
 #import "AppDelegate.h"
 #import "TabBarVC.h"
+#import "LoginVC.h"
 @interface AppDelegate ()
 
 @end
@@ -26,16 +27,37 @@
 
 -(void)initRoot{
     
-    TabBarVC *tabbarvc = [[TabBarVC alloc] init];
+//    TabBarVC *tabbarvc = [[TabBarVC alloc] init];
+//    UINavigationController *navigationController = [[UINavigationController alloc] init];
+//    [navigationController setNavigationBarHidden:YES animated:NO];
+    if (
+        [[[NSUserDefaults standardUserDefaults] valueForKey:@"isLogin"] isEqualToString:@"1"]) {
+            [self showHomeViewController];
+        }else{
+            [self showLoginViewController];
+        }
     
-    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:tabbarvc];
-    [navigationController setNavigationBarHidden:YES animated:NO];
-    
-    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    self.window.rootViewController = navigationController;
-    [self.window makeKeyAndVisible];
+//    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+//    self.window.rootViewController = navigationController;
+//    [self.window makeKeyAndVisible];
 }
 
+- (void)showHomeViewController {
+    // 实例化首页视图控制器
+    TabBarVC *tabbarvc = [[TabBarVC alloc] init];
+    UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:tabbarvc];
+    [navController setNavigationBarHidden:YES animated:NO];
+    self.window.rootViewController = navController;
+}
+
+- (void)showLoginViewController {
+    // 实例化登录视图控制器
+    LoginVC *loginVC = [[LoginVC alloc] init];
+    UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:loginVC];
+    [navController setNavigationBarHidden:YES animated:NO]; // 隐藏导航栏
+    // 设置根视图控制器
+    self.window.rootViewController = navController;
+}
 #pragma mark - Core Data stack
 
 @synthesize persistentContainer = _persistentContainer;
@@ -57,7 +79,7 @@
                      * The device is out of space.
                      * The store could not be migrated to the current model version.
                      Check the error message to determine what the actual problem was.
-                    */
+                     */
                     NSLog(@"Unresolved error %@, %@", error, error.userInfo);
                     abort();
                 }

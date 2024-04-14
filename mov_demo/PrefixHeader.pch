@@ -24,5 +24,4 @@
 #define kNavigationBarHeight [[UINavigationController alloc] init].navigationBar.frame.size.height
 
 
-
 #endif /* PrefixHeader_pch */

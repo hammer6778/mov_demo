@@ -4,6 +4,8 @@
 #import "PairVC.h"
 #import "mov_demo-Swift.h"
 #import "UserSettingsManager.h"
+#import "LoginVC.h"
+
 @interface UserVC () <UITableViewDataSource, UITableViewDelegate,UITextFieldDelegate>
 
 @property (nonatomic, strong) UIView *userProfileView;
@@ -45,9 +47,10 @@
 
 //viewmodel绑定
 -(void)setViewModel{
+    NSString *email = [[NSUserDefaults standardUserDefaults] valueForKey:@"email"];
     UserViewModel *viewmodel = [[UserViewModel alloc] init];
     viewmodel.username = @"小花";
-    viewmodel.vip = @"黄金vip";
+    viewmodel.vip = email;
     viewmodel.age = 18;
     _viewModel = viewmodel;
     _usernameTextField.text = viewmodel.username;
@@ -66,7 +69,8 @@
 }
 - (void)dealloc {
     // 移除观察者
-    [self.viewModel removeObserver:self forKeyPath:@"name"];
+    [self.viewModel removeObserver:self forKeyPath:@"username"];
+    
 }
 - (void)textFieldDidEndEditing:(UITextField *)textField{
     self.viewModel.username = textField.text;
@@ -118,9 +122,10 @@
         make.left.equalTo(self.profileImageView.mas_right).offset(20);
     }];
     
+    NSString *email = [[NSUserDefaults standardUserDefaults] valueForKey:@"email"];
     // 会员等级
     self.memberLevelLabel = [[UILabel alloc] init];
-    self.memberLevelLabel.text = @"VIP等级";
+    self.memberLevelLabel.text = email;
     self.memberLevelLabel.font = [UIFont systemFontOfSize:18];
     self.memberLevelLabel.textColor = [UIColor colorWithRed:255/255.0 green:69/255.0 blue:0/255.0 alpha:1.0]; // 橙色字体
     [self.userProfileView addSubview:self.memberLevelLabel];
@@ -156,7 +161,7 @@
     }];
     
     // 数据源
-    self.menuItems = @[@"我的发布", @"我的相册", @"我的礼物", @"关于我们"];
+    self.menuItems = @[@"我的发布", @"我的相册", @"我的礼物", @"关于我们", @"退出登录"];
 }
 -(void)goPair{
     PairVC *vc = [[PairVC alloc]init];
@@ -187,22 +192,33 @@
             NSLog(@"我的发布");
             break;
         case 1:
-            // 我的相册
             NSLog(@"我的相册");
             break;
         case 2:
-            // 我的礼物
             NSLog(@"我的礼物");
             break;
         case 3:
-            // 关于我们
             NSLog(@"关于我们");
+            break;
+        case 4:
+            [self logout];
             break;
         default:
             break;
     }
 }
 
+-(void)logout{
+    // 清空用户登录信息
+    [[NSUserDefaults standardUserDefaults] removeObjectForKey:@"email"];
+    [[NSUserDefaults standardUserDefaults] setValue:@"0" forKey:@"isLogin"];
+    [[NSUserDefaults standardUserDefaults] synchronize]; // 确保立即写入
 
+    // 显示登录页
+    LoginVC *loginVC = [[LoginVC alloc] init];
+    UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:loginVC];
+    [navController setNavigationBarHidden:YES animated:NO];
+    [UIApplication sharedApplication].keyWindow.rootViewController = navController;
+}
 
 @end

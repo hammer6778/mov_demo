@@ -37,7 +37,7 @@
         // 每个商品的倒计时时间增加10秒
         NSTimeInterval countdownTime = timestamp + i * 10;
         Product *product = [[Product alloc] init];
-        product.productImageName = @"goods"; // 示例图片名称
+        product.productImageName = @"car"; // 示例图片名称
         product.productName = [NSString stringWithFormat:@"Product %d", i + 1]; // 示例产品名称
         product.countdownTime = countdownTime;
         [products addObject:product];
