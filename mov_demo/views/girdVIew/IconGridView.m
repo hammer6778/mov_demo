@@ -28,9 +28,9 @@
 
 - (void)setupCollectionView {
     UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc] init];
-    layout.minimumInteritemSpacing = 8;
-    layout.minimumLineSpacing = 8;
-    layout.sectionInset = UIEdgeInsetsMake(10, 6, 10, 6);
+    layout.minimumInteritemSpacing = 2;
+    layout.minimumLineSpacing = 2;
+    layout.sectionInset = UIEdgeInsetsMake(6, 6, 6, 6);
     
     self.collectionView = [[UICollectionView alloc] initWithFrame:self.bounds collectionViewLayout:layout];
     self.collectionView.backgroundColor = [UIColor whiteColor];

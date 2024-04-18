@@ -19,14 +19,18 @@
 
 
 -(void)setNav{
+    UIColor *brightOrangeColor = [UIColor colorWithRed:1.0 green:0.5 blue:0.0 alpha:1.0];
+    UIColor *brightGreenColor = [UIColor colorWithRed:0.0 green:1.0 blue:0.5 alpha:1.0];
+
+
     UIView *backView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, DeviceWidth, kStatusBarHeight+kNavigationBarHeight)];
-    backView.backgroundColor = UIColor.cyanColor;
+    backView.backgroundColor = brightGreenColor;
     [self addSubview:backView];
     //城市
     UIButton *cityBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     cityBtn.frame = CGRectMake(10, kStatusBarHeight+8, 40, 25);
     cityBtn.font = [UIFont systemFontOfSize:15];
-    [cityBtn setTitle:@"北京" forState:UIControlStateNormal];
+    [cityBtn setTitle:@"广东" forState:UIControlStateNormal];
     [backView addSubview:cityBtn];
     //
     UIImageView *arrowImage = [[UIImageView alloc] initWithFrame:CGRectMake(CGRectGetMaxX(cityBtn.frame), kStatusBarHeight+14, 13, 10)];
@@ -61,7 +65,9 @@
 }
 
 -(void)OnMapBtnTap:(UIButton *)sender{
-    
+    if (self.onMapTapBlock) {
+        self.onMapTapBlock();
+    }
 }
 
 @end

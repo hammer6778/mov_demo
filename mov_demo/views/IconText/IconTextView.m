@@ -36,12 +36,12 @@
     [self.imageView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.centerX.equalTo(self);
         make.top.equalTo(self);
-        make.width.height.equalTo(@48);
+        make.width.height.equalTo(@26);
     }];
     
     [self.textView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.centerX.equalTo(self);
-        make.top.equalTo(self.imageView.mas_bottom).offset(6);
+        make.top.equalTo(self.imageView.mas_bottom).offset(4);
     }];
 }
 
